@@ -7,11 +7,11 @@
 //
 
 import UIKit
-import GoogleMobileAds
+//import GoogleMobileAds
 
 class HandsTVC: UITableViewController {
     
-    var interstitial: GADInterstitial!
+//    var interstitial: GADInterstitial!
 
     let backgroundImage = Background()
     let handDetails = HandDetails()
@@ -19,7 +19,7 @@ class HandsTVC: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        prepareGADIntersintitial()
+//        prepareGADIntersintitial()
         
         self.view.backgroundColor = UIColor(patternImage: backgroundImage.getImage())
         tableView.tableFooterView = UIView(frame: CGRectZero)
