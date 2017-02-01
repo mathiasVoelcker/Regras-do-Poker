@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Yo4-un-OW6">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--MenuVC-->
+        <scene sceneID="XN7-R6-35h">
+            <objects>
+                <viewController id="Yo4-un-OW6" customClass="MenuVC" customModule="Poker_Rules" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qFl-1d-Q5e"/>
+                        <viewControllerLayoutGuide type="bottom" id="I26-pP-KM9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ru5-Ig-Iqv">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q95-im-F8f" customClass="MenuButtons" customModule="Poker_Rules" customModuleProvider="target">
+                                <rect key="frame" x="220" y="411" width="160" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="QBO-77-1b4"/>
+                                    <constraint firstAttribute="height" constant="60" id="yav-BU-Oyz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <state key="normal" title="POKER RULES"/>
+                                <connections>
+                                    <segue destination="AYR-eo-Odi" kind="show" id="Oew-5g-K8p"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo (5).png" translatesAutoresizingMaskIntoConstraints="NO" id="ZDQ-uG-smS">
+                                <rect key="frame" x="145" y="58" width="310" height="233"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BgK-Ya-2mg" customClass="MenuButtons" customModule="Poker_Rules" customModuleProvider="target">
+                                <rect key="frame" x="220" y="321" width="160" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="OI8-PU-VGP"/>
+                                    <constraint firstAttribute="height" constant="60" id="Zar-lX-ksf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <state key="normal" title="POKER HANDS"/>
+                                <connections>
+                                    <segue destination="DNj-cj-CKJ" kind="show" id="zbg-IG-p6g"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="q95-im-F8f" firstAttribute="top" secondItem="BgK-Ya-2mg" secondAttribute="bottom" constant="30" id="9qg-dB-OiJ"/>
+                            <constraint firstItem="ZDQ-uG-smS" firstAttribute="top" secondItem="qFl-1d-Q5e" secondAttribute="bottom" constant="38" id="DRc-UK-tHk"/>
+                            <constraint firstItem="BgK-Ya-2mg" firstAttribute="top" secondItem="ZDQ-uG-smS" secondAttribute="bottom" constant="30" id="TB7-1P-Ind"/>
+                            <constraint firstItem="q95-im-F8f" firstAttribute="centerX" secondItem="ru5-Ig-Iqv" secondAttribute="centerX" id="m0A-83-iD9"/>
+                            <constraint firstItem="BgK-Ya-2mg" firstAttribute="centerX" secondItem="ru5-Ig-Iqv" secondAttribute="centerX" id="plB-Up-fZx"/>
+                            <constraint firstItem="ZDQ-uG-smS" firstAttribute="centerX" secondItem="ru5-Ig-Iqv" secondAttribute="centerX" id="rPB-0n-89l"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="iwD-QK-6S8"/>
+                    <connections>
+                        <outlet property="btnHandsConstraint" destination="TB7-1P-Ind" id="1FY-aR-e5f"/>
+                        <outlet property="btnTermsConstraint" destination="9qg-dB-OiJ" id="32Z-IA-KDz"/>
+                        <outlet property="logoImageView" destination="ZDQ-uG-smS" id="iMQ-OF-0ri"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bE1-n8-OOZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-524" y="-351"/>
+        </scene>
+        <!--HandsTVC-->
+        <scene sceneID="3An-dh-mvg">
+            <objects>
+                <tableViewController id="DNj-cj-CKJ" customClass="HandsTVC" customModule="Poker_Rules" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" id="2Bb-bD-8dx">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="ZRl-6y-673">
+                                <rect key="frame" x="0.0" y="28" width="600" height="80"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZRl-6y-673" id="G4C-92-J18">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="79"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="HsI-FT-5WQ" kind="show" identifier="showHand" id="7au-yV-hyh"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="DNj-cj-CKJ" id="qxg-ff-o21"/>
+                            <outlet property="delegate" destination="DNj-cj-CKJ" id="T9Y-WX-caw"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <segue destination="Yo4-un-OW6" kind="show" identifier="backToHomeSegue" id="wv6-iD-sJf"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0rY-Uo-0G6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="281" y="-329"/>
+        </scene>
+        <!--Hand DetailsVC-->
+        <scene sceneID="SVt-4q-1v7">
+            <objects>
+                <viewController id="HsI-FT-5WQ" customClass="HandDetailsVC" customModule="Poker_Rules" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gyx-ih-LCU"/>
+                        <viewControllerLayoutGuide type="bottom" id="L2H-O5-6XV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Wul-3N-AC3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hand Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dMj-En-WN6" customClass="LabelStyle" customModule="Poker_Rules" customModuleProvider="target">
+                                <rect key="frame" x="223" y="257" width="154" height="33"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="27"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rule Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LbS-ga-c2c" customClass="LabelStyle" customModule="Poker_Rules" customModuleProvider="target">
+                                <rect key="frame" x="40" y="313" width="520" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="l1E-cJ-OLs">
+                                <rect key="frame" x="20" y="85" width="331" height="132"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="331" id="b6H-sd-PhW"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="132" id="q5C-86-7Xe"/>
+                                    <constraint firstAttribute="height" constant="132" id="rQ2-BK-jRh"/>
+                                    <constraint firstAttribute="width" constant="331" id="w2Y-1S-GM7"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m3y-ie-gga">
+                                <rect key="frame" x="20" y="20" width="64" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="3Ga-BF-DnU"/>
+                                    <constraint firstAttribute="height" constant="64" id="Pzr-tr-L7m"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="DNj-cj-CKJ" kind="presentation" id="aue-98-70z"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="l1E-cJ-OLs" firstAttribute="leading" secondItem="Wul-3N-AC3" secondAttribute="leadingMargin" id="0jd-8M-f9P"/>
+                            <constraint firstItem="LbS-ga-c2c" firstAttribute="top" secondItem="dMj-En-WN6" secondAttribute="bottom" constant="23" id="2GC-lK-SSd"/>
+                            <constraint firstItem="LbS-ga-c2c" firstAttribute="centerX" secondItem="dMj-En-WN6" secondAttribute="centerX" id="66H-g3-UUt"/>
+                            <constraint firstItem="m3y-ie-gga" firstAttribute="leading" secondItem="Wul-3N-AC3" secondAttribute="leadingMargin" id="79D-L4-mb7"/>
+                            <constraint firstItem="m3y-ie-gga" firstAttribute="top" secondItem="gyx-ih-LCU" secondAttribute="bottom" id="NdC-nz-tNf"/>
+                            <constraint firstItem="dMj-En-WN6" firstAttribute="top" secondItem="l1E-cJ-OLs" secondAttribute="bottom" constant="40" id="Usx-gB-NnA"/>
+                            <constraint firstItem="l1E-cJ-OLs" firstAttribute="top" secondItem="gyx-ih-LCU" secondAttribute="bottom" constant="65" id="bqH-bw-PNo"/>
+                            <constraint firstItem="LbS-ga-c2c" firstAttribute="leading" secondItem="Wul-3N-AC3" secondAttribute="leadingMargin" constant="20" id="fGU-XY-Hsy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="LbS-ga-c2c" secondAttribute="trailing" constant="20" id="i1r-kv-5Jg"/>
+                            <constraint firstItem="dMj-En-WN6" firstAttribute="centerX" secondItem="Wul-3N-AC3" secondAttribute="centerX" id="wQu-AM-KrS"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="goBackButton" destination="m3y-ie-gga" id="wpw-FG-TwT"/>
+                        <outlet property="handDescriptionConstraint" destination="2GC-lK-SSd" id="gOe-R4-bOx"/>
+                        <outlet property="handDescriptionLabel" destination="LbS-ga-c2c" id="MKu-HH-dz0"/>
+                        <outlet property="handImage" destination="l1E-cJ-OLs" id="Kiq-pO-aDb"/>
+                        <outlet property="handImageView" destination="l1E-cJ-OLs" id="Tx8-5o-gB9"/>
+                        <outlet property="handRuleLabel" destination="dMj-En-WN6" id="3Ig-cA-3qa"/>
+                        <outlet property="handTitleConstraint" destination="Usx-gB-NnA" id="AMY-Vq-ATW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T8v-b0-4DA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1024" y="-357"/>
+        </scene>
+        <!--TermsTVC-->
+        <scene sceneID="R1J-y7-Jme">
+            <objects>
+                <tableViewController id="AYR-eo-Odi" customClass="TermsTVC" customModule="Poker_Rules" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="VfM-gM-VWm">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="eyF-P6-X0H">
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eyF-P6-X0H" id="qMJ-La-HmK">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="AYR-eo-Odi" id="AZF-NI-xZZ"/>
+                            <outlet property="delegate" destination="AYR-eo-Odi" id="qci-Pr-Jve"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <segue destination="GHa-tb-E5p" kind="presentation" identifier="termExplanationSegue" id="dtj-up-a73"/>
+                        <segue destination="Yo4-un-OW6" kind="show" identifier="backToHomeSegue1" id="RIE-QM-Qyy"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1y3-FW-zDH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-432" y="433"/>
+        </scene>
+        <!--Term ExplanationVC-->
+        <scene sceneID="eqk-nV-aSj">
+            <objects>
+                <viewController id="GHa-tb-E5p" customClass="TermExplanationVC" customModule="Poker_Rules" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cyz-Rn-mgJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="Y2A-Z8-cJb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Qev-YQ-ZiM">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xjT-VU-GxE" customClass="LabelStyle" customModule="Poker_Rules" customModuleProvider="target">
+                                <rect key="frame" x="264" y="124" width="73" height="33"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="27"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p5S-cS-UtW">
+                                <rect key="frame" x="20" y="20" width="64" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="5Oz-HE-e5O"/>
+                                    <constraint firstAttribute="height" constant="64" id="6dg-nt-4GN"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="AYR-eo-Odi" kind="show" id="7cN-Tg-CWp"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yE9-bl-0bT" customClass="LabelStyle" customModule="Poker_Rules" customModuleProvider="target">
+                                <rect key="frame" x="36" y="192" width="528" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yE9-bl-0bT" firstAttribute="leading" secondItem="Qev-YQ-ZiM" secondAttribute="leadingMargin" constant="16" id="8zF-Gh-6sA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yE9-bl-0bT" secondAttribute="trailing" constant="16" id="CYB-Rg-cra"/>
+                            <constraint firstItem="xjT-VU-GxE" firstAttribute="top" secondItem="cyz-Rn-mgJ" secondAttribute="bottom" constant="104" id="Xqj-pZ-9aZ"/>
+                            <constraint firstItem="yE9-bl-0bT" firstAttribute="centerX" secondItem="xjT-VU-GxE" secondAttribute="centerX" id="Zmk-xT-rV9"/>
+                            <constraint firstItem="p5S-cS-UtW" firstAttribute="top" secondItem="cyz-Rn-mgJ" secondAttribute="bottom" id="dqg-bx-UNQ"/>
+                            <constraint firstItem="xjT-VU-GxE" firstAttribute="centerX" secondItem="Qev-YQ-ZiM" secondAttribute="centerX" id="iio-tX-R5X"/>
+                            <constraint firstItem="p5S-cS-UtW" firstAttribute="leading" secondItem="Qev-YQ-ZiM" secondAttribute="leadingMargin" id="mu1-zF-4eS"/>
+                            <constraint firstItem="yE9-bl-0bT" firstAttribute="top" secondItem="xjT-VU-GxE" secondAttribute="bottom" constant="35" id="oTp-Ep-HQs"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="explanationLabel" destination="yE9-bl-0bT" id="iTg-dW-5cS"/>
+                        <outlet property="goBackButton" destination="p5S-cS-UtW" id="h2s-FC-05I"/>
+                        <outlet property="termExplanationConstraint" destination="oTp-Ep-HQs" id="8Xj-K3-4In"/>
+                        <outlet property="termLabel" destination="xjT-VU-GxE" id="aN0-nj-YMb"/>
+                        <outlet property="termTitleConstraint" destination="Xqj-pZ-9aZ" id="Skf-lz-Vmn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X4F-sm-z1X" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="292" y="433"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo (5).png" width="310" height="233"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="wv6-iD-sJf"/>
+        <segue reference="zbg-IG-p6g"/>
+        <segue reference="Oew-5g-K8p"/>
+    </inferredMetricsTieBreakers>
+</document>

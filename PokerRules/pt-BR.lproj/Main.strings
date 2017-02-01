@@ -1,0 +1,18 @@
+
+/* Class = "UIButton"; normalTitle = "MÃOS DO POKER"; ObjectID = "BgK-Ya-2mg"; */
+"BgK-Ya-2mg.normalTitle" = "MÃOS DO POKER";
+
+/* Class = "UILabel"; text = "Rule Description"; ObjectID = "LbS-ga-c2c"; */
+"LbS-ga-c2c.text" = "Rule Description";
+
+/* Class = "UILabel"; text = "Hand Name"; ObjectID = "dMj-En-WN6"; */
+"dMj-En-WN6.text" = "Hand Name";
+
+/* Class = "UIButton"; normalTitle = "TERMOS DO POKER"; ObjectID = "q95-im-F8f"; */
+"q95-im-F8f.normalTitle" = "TERMOS DO POKER";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "xjT-VU-GxE"; */
+"xjT-VU-GxE.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "yE9-bl-0bT"; */
+"yE9-bl-0bT.text" = "Label";

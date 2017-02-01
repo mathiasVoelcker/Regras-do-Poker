@@ -1,0 +1,6 @@
+framework module Pods_Regras_do_Poker {
+  umbrella header "Pods-Regras do Poker-umbrella.h"
+
+  export *
+  module * { export * }
+}
