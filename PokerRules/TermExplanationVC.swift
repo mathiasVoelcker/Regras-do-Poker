@@ -7,13 +7,17 @@
 //
 
 import UIKit
+import GoogleMobileAds
 
-class TermExplanationVC: UIViewController {
+
+class TermExplanationVC: UIViewController, GADBannerViewDelegate {
 
     
     let background = Background()
     let termExplanation = TermsExplanation()
     let handDetails = HandDetails()
+    
+    @IBOutlet weak var adBannerView: GADBannerView!
     
     @IBOutlet weak var termTitleConstraint: NSLayoutConstraint!
     @IBOutlet weak var termExplanationConstraint: NSLayoutConstraint!
@@ -27,6 +31,12 @@ class TermExplanationVC: UIViewController {
     override func viewDidLoad() {
         animEngine = AnimationEngine(constraints: [termTitleConstraint, termExplanationConstraint])
         super.viewDidLoad()
+        
+        adBannerView.delegate = self
+        adBannerView.adUnitID = "ca-app-pub-4117412616420420/3524241197"
+        adBannerView.rootViewController = self
+        adBannerView.loadRequest(GADRequest())
+        
         termExplanation.defineTerm(toPass)
         self.view.backgroundColor = UIColor(patternImage: background.getImage())
         termLabel.text = termExplanation.getTermText()

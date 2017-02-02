@@ -7,24 +7,26 @@
 //
 
 import UIKit
-//import GoogleMobileAds
+import GoogleMobileAds
 
-class HandsTVC: UITableViewController {
+class HandsTVC: UITableViewController, GADBannerViewDelegate {
     
-//    var interstitial: GADInterstitial!
+//    let bannerView = GADBannerView(adSize: kGADAdSizeSmartBannerPortrait)
 
     let backgroundImage = Background()
     let handDetails = HandDetails()
 
+//    @IBOutlet weak var adBannerView: GADBannerView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-//        prepareGADIntersintitial()
         
         self.view.backgroundColor = UIColor(patternImage: backgroundImage.getImage())
         tableView.tableFooterView = UIView(frame: CGRectZero)
         self.tableView.layoutMargins.top = 10
+        
     }
+    
     
 
     override func didReceiveMemoryWarning() {
@@ -32,6 +34,7 @@ class HandsTVC: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10
@@ -73,6 +76,6 @@ class HandsTVC: UITableViewController {
             performSegueWithIdentifier("backToHomeSegue", sender: nil)
         }
     }
-
+    
 
 }

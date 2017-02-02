@@ -75,6 +75,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <view key="tableFooterView" contentMode="scaleToFill" id="7Cz-se-Eu1">
+                            <rect key="frame" x="0.0" y="108" width="600" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="ZRl-6y-673">
                                 <rect key="frame" x="0.0" y="28" width="600" height="80"/>
@@ -99,7 +104,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0rY-Uo-0G6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="281" y="-329"/>
+            <point key="canvasLocation" x="261" y="-470"/>
         </scene>
         <!--Hand DetailsVC-->
         <scene sceneID="SVt-4q-1v7">
@@ -144,6 +149,14 @@
                                     <segue destination="DNj-cj-CKJ" kind="presentation" id="aue-98-70z"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hhb-ro-fXr" customClass="GADBannerView">
+                                <rect key="frame" x="140" y="462" width="320" height="50"/>
+                                <color key="backgroundColor" red="0.96467715501785278" green="0.43860992789268494" blue="0.027230670675635338" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="nt2-x1-40D"/>
+                                    <constraint firstAttribute="height" constant="50" id="yyg-cc-otu"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -152,16 +165,19 @@
                             <constraint firstItem="LbS-ga-c2c" firstAttribute="centerX" secondItem="dMj-En-WN6" secondAttribute="centerX" id="66H-g3-UUt"/>
                             <constraint firstItem="m3y-ie-gga" firstAttribute="leading" secondItem="Wul-3N-AC3" secondAttribute="leadingMargin" id="79D-L4-mb7"/>
                             <constraint firstItem="m3y-ie-gga" firstAttribute="top" secondItem="gyx-ih-LCU" secondAttribute="bottom" id="NdC-nz-tNf"/>
+                            <constraint firstItem="hhb-ro-fXr" firstAttribute="centerX" secondItem="Wul-3N-AC3" secondAttribute="centerX" id="UOi-rK-87T"/>
                             <constraint firstItem="dMj-En-WN6" firstAttribute="top" secondItem="l1E-cJ-OLs" secondAttribute="bottom" constant="40" id="Usx-gB-NnA"/>
                             <constraint firstItem="l1E-cJ-OLs" firstAttribute="top" secondItem="gyx-ih-LCU" secondAttribute="bottom" constant="65" id="bqH-bw-PNo"/>
                             <constraint firstItem="LbS-ga-c2c" firstAttribute="leading" secondItem="Wul-3N-AC3" secondAttribute="leadingMargin" constant="20" id="fGU-XY-Hsy"/>
                             <constraint firstAttribute="trailingMargin" secondItem="LbS-ga-c2c" secondAttribute="trailing" constant="20" id="i1r-kv-5Jg"/>
+                            <constraint firstItem="L2H-O5-6XV" firstAttribute="top" secondItem="hhb-ro-fXr" secondAttribute="bottom" id="oSi-rG-ttu"/>
                             <constraint firstItem="dMj-En-WN6" firstAttribute="centerX" secondItem="Wul-3N-AC3" secondAttribute="centerX" id="wQu-AM-KrS"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="adBannerView" destination="hhb-ro-fXr" id="cHA-Ka-riV"/>
                         <outlet property="goBackButton" destination="m3y-ie-gga" id="wpw-FG-TwT"/>
                         <outlet property="handDescriptionConstraint" destination="2GC-lK-SSd" id="gOe-R4-bOx"/>
                         <outlet property="handDescriptionLabel" destination="LbS-ga-c2c" id="MKu-HH-dz0"/>
@@ -173,7 +189,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T8v-b0-4DA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1024" y="-357"/>
+            <point key="canvasLocation" x="1098" y="-415"/>
         </scene>
         <!--TermsTVC-->
         <scene sceneID="R1J-y7-Jme">
@@ -241,20 +257,31 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gHg-je-gE2" customClass="GADBannerView">
+                                <rect key="frame" x="140" y="550" width="320" height="50"/>
+                                <color key="backgroundColor" red="0.95919722318649292" green="0.1930030882358551" blue="0.014916658401489258" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Avl-ch-sIQ"/>
+                                    <constraint firstAttribute="width" constant="320" id="VI1-gr-4WC"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="yE9-bl-0bT" firstAttribute="leading" secondItem="Qev-YQ-ZiM" secondAttribute="leadingMargin" constant="16" id="8zF-Gh-6sA"/>
+                            <constraint firstItem="gHg-je-gE2" firstAttribute="centerX" secondItem="Qev-YQ-ZiM" secondAttribute="centerX" id="BR3-OS-tQU"/>
                             <constraint firstAttribute="trailingMargin" secondItem="yE9-bl-0bT" secondAttribute="trailing" constant="16" id="CYB-Rg-cra"/>
                             <constraint firstItem="xjT-VU-GxE" firstAttribute="top" secondItem="cyz-Rn-mgJ" secondAttribute="bottom" constant="104" id="Xqj-pZ-9aZ"/>
                             <constraint firstItem="yE9-bl-0bT" firstAttribute="centerX" secondItem="xjT-VU-GxE" secondAttribute="centerX" id="Zmk-xT-rV9"/>
                             <constraint firstItem="p5S-cS-UtW" firstAttribute="top" secondItem="cyz-Rn-mgJ" secondAttribute="bottom" id="dqg-bx-UNQ"/>
+                            <constraint firstItem="Y2A-Z8-cJb" firstAttribute="top" secondItem="gHg-je-gE2" secondAttribute="bottom" id="fDW-Ei-fK9"/>
                             <constraint firstItem="xjT-VU-GxE" firstAttribute="centerX" secondItem="Qev-YQ-ZiM" secondAttribute="centerX" id="iio-tX-R5X"/>
                             <constraint firstItem="p5S-cS-UtW" firstAttribute="leading" secondItem="Qev-YQ-ZiM" secondAttribute="leadingMargin" id="mu1-zF-4eS"/>
                             <constraint firstItem="yE9-bl-0bT" firstAttribute="top" secondItem="xjT-VU-GxE" secondAttribute="bottom" constant="35" id="oTp-Ep-HQs"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="adBannerView" destination="gHg-je-gE2" id="6XS-yN-2NP"/>
                         <outlet property="explanationLabel" destination="yE9-bl-0bT" id="iTg-dW-5cS"/>
                         <outlet property="goBackButton" destination="p5S-cS-UtW" id="h2s-FC-05I"/>
                         <outlet property="termExplanationConstraint" destination="oTp-Ep-HQs" id="8Xj-K3-4In"/>
@@ -266,13 +293,30 @@
             </objects>
             <point key="canvasLocation" x="292" y="433"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="365-4Z-WwW">
+            <objects>
+                <viewController id="zMS-bN-YV8" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jH6-eC-dst"/>
+                        <viewControllerLayoutGuide type="bottom" id="oqA-d9-khQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Q5g-nh-jsv">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Cg-bJ-v4L" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
     </scenes>
     <resources>
         <image name="logo (5).png" width="310" height="233"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="7cN-Tg-CWp"/>
+        <segue reference="aue-98-70z"/>
         <segue reference="wv6-iD-sJf"/>
-        <segue reference="zbg-IG-p6g"/>
-        <segue reference="Oew-5g-K8p"/>
     </inferredMetricsTieBreakers>
 </document>

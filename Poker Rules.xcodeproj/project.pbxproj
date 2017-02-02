@@ -9,6 +9,19 @@
 /* Begin PBXBuildFile section */
 		201B4D4E1D7CCE3600AF9560 /* HandsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2051E4E31D4833E70011E403 /* HandsTVC.swift */; };
 		201C96451D746FF90093D62C /* logo (5).png in Resources */ = {isa = PBXBuildFile; fileRef = 201C96441D746FF90093D62C /* logo (5).png */; };
+		201CB91D1E43B355005D3AEF /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 201CB91C1E43B355005D3AEF /* GoogleMobileAds.framework */; };
+		201CB91F1E43B3BC005D3AEF /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 201CB91E1E43B3BC005D3AEF /* AdSupport.framework */; };
+		201CB9211E43B3DB005D3AEF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 201CB9201E43B3DB005D3AEF /* AudioToolbox.framework */; };
+		201CB9231E43B3E7005D3AEF /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 201CB9221E43B3E7005D3AEF /* AVFoundation.framework */; };
+		201CB9271E43B3F5005D3AEF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 201CB9241E43B3F5005D3AEF /* CoreGraphics.framework */; };
+		201CB9281E43B3F5005D3AEF /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 201CB9251E43B3F5005D3AEF /* CoreMedia.framework */; };
+		201CB9291E43B3F5005D3AEF /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 201CB9261E43B3F5005D3AEF /* CoreTelephony.framework */; };
+		201CB92C1E43B409005D3AEF /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 201CB92A1E43B409005D3AEF /* EventKit.framework */; };
+		201CB92D1E43B409005D3AEF /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 201CB92B1E43B409005D3AEF /* EventKitUI.framework */; };
+		201CB92F1E43B421005D3AEF /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 201CB92E1E43B421005D3AEF /* MessageUI.framework */; };
+		201CB9311E43B42B005D3AEF /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 201CB9301E43B42B005D3AEF /* MediaPlayer.framework */; };
+		201CB9331E43B446005D3AEF /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 201CB9321E43B446005D3AEF /* StoreKit.framework */; };
+		201CB9351E43B44D005D3AEF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 201CB9341E43B44D005D3AEF /* SystemConfiguration.framework */; };
 		201CD1F21E29BE9900FDBC67 /* reglas del poker logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 201CD1F01E29BE9900FDBC67 /* reglas del poker logo.png */; };
 		201CD1F31E29BE9900FDBC67 /* poker rules logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 201CD1F11E29BE9900FDBC67 /* poker rules logo.png */; };
 		201CD1F61E29C1E600FDBC67 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 201CD1F81E29C1E600FDBC67 /* Localizable.strings */; };
@@ -49,6 +62,19 @@
 		201977E51E26E9D8002961FE /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Main.strings"; sourceTree = "<group>"; };
 		201977E61E26E9D8002961FE /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		201C96441D746FF90093D62C /* logo (5).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "logo (5).png"; path = "../../../../../Downloads/logo (5).png"; sourceTree = "<group>"; };
+		201CB91C1E43B355005D3AEF /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = "../../../../../Downloads/GoogleMobileAdsSdkiOS-7.17.0/GoogleMobileAds.framework"; sourceTree = "<group>"; };
+		201CB91E1E43B3BC005D3AEF /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		201CB9201E43B3DB005D3AEF /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		201CB9221E43B3E7005D3AEF /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		201CB9241E43B3F5005D3AEF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		201CB9251E43B3F5005D3AEF /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		201CB9261E43B3F5005D3AEF /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		201CB92A1E43B409005D3AEF /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		201CB92B1E43B409005D3AEF /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
+		201CB92E1E43B421005D3AEF /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		201CB9301E43B42B005D3AEF /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		201CB9321E43B446005D3AEF /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		201CB9341E43B44D005D3AEF /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		201CD1EA1E29A87A00FDBC67 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
 		201CD1EB1E29A87A00FDBC67 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		201CD1ED1E29A87F00FDBC67 /* es-MX */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-MX"; path = "es-MX.lproj/Main.strings"; sourceTree = "<group>"; };
@@ -102,8 +128,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				201CB9351E43B44D005D3AEF /* SystemConfiguration.framework in Frameworks */,
+				201CB9331E43B446005D3AEF /* StoreKit.framework in Frameworks */,
+				201CB9311E43B42B005D3AEF /* MediaPlayer.framework in Frameworks */,
+				201CB92F1E43B421005D3AEF /* MessageUI.framework in Frameworks */,
+				201CB92C1E43B409005D3AEF /* EventKit.framework in Frameworks */,
+				201CB92D1E43B409005D3AEF /* EventKitUI.framework in Frameworks */,
+				201CB9271E43B3F5005D3AEF /* CoreGraphics.framework in Frameworks */,
+				201CB9281E43B3F5005D3AEF /* CoreMedia.framework in Frameworks */,
+				201CB9291E43B3F5005D3AEF /* CoreTelephony.framework in Frameworks */,
+				201CB9231E43B3E7005D3AEF /* AVFoundation.framework in Frameworks */,
+				201CB9211E43B3DB005D3AEF /* AudioToolbox.framework in Frameworks */,
+				201CB91F1E43B3BC005D3AEF /* AdSupport.framework in Frameworks */,
 				209423BC1E42834800C49913 /* pop.framework in Frameworks */,
 				204E0FBB1E413C5500D5AA21 /* GoogleMobileAds.framework in Frameworks */,
+				201CB91D1E43B355005D3AEF /* GoogleMobileAds.framework in Frameworks */,
 				204F15491E35136A00251B6A /* Pods_Regras_do_Poker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -111,6 +150,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		201CB91B1E43B326005D3AEF /* Admob */ = {
+			isa = PBXGroup;
+			children = (
+				201CB91C1E43B355005D3AEF /* GoogleMobileAds.framework */,
+			);
+			name = Admob;
+			sourceTree = "<group>";
+		};
 		2033CC8F1D61274C00D1DFCE /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +188,7 @@
 		2051E4BA1D46B86D0011E403 /* PokerRules */ = {
 			isa = PBXGroup;
 			children = (
+				201CB91B1E43B326005D3AEF /* Admob */,
 				2051E4BB1D46B86E0011E403 /* AppDelegate.swift */,
 				201CD1F81E29C1E600FDBC67 /* Localizable.strings */,
 				2051E4BF1D46B86E0011E403 /* Main.storyboard */,
@@ -228,6 +276,18 @@
 		5E744613D10EC6892B88B83B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				201CB9341E43B44D005D3AEF /* SystemConfiguration.framework */,
+				201CB9321E43B446005D3AEF /* StoreKit.framework */,
+				201CB9301E43B42B005D3AEF /* MediaPlayer.framework */,
+				201CB92E1E43B421005D3AEF /* MessageUI.framework */,
+				201CB92A1E43B409005D3AEF /* EventKit.framework */,
+				201CB92B1E43B409005D3AEF /* EventKitUI.framework */,
+				201CB9241E43B3F5005D3AEF /* CoreGraphics.framework */,
+				201CB9251E43B3F5005D3AEF /* CoreMedia.framework */,
+				201CB9261E43B3F5005D3AEF /* CoreTelephony.framework */,
+				201CB9221E43B3E7005D3AEF /* AVFoundation.framework */,
+				201CB9201E43B3DB005D3AEF /* AudioToolbox.framework */,
+				201CB91E1E43B3BC005D3AEF /* AdSupport.framework */,
 				209423BB1E42834800C49913 /* pop.framework */,
 				204E0FB71E41388400D5AA21 /* GoogleMobileAds.framework */,
 				20515E8A1E342A4200692D2B /* iAd.framework */,
